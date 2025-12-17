@@ -13,7 +13,7 @@ export function ProductCard({ product }: { product: Product }) {
     : `${baseURL}${product.images[0].url}`;
 
   return (
-    <div className="flex flex-col flex-1 overflow-hidden hover:bg-gray-200 p-4 rounded-xl cursor-pointer transition">
+    <div className="flex flex-col flex-1 overflow-hidden hover:bg-gray-100 active:bg-gray-200 p-4 rounded-xl cursor-pointer transition">
       <div className={`aspect-square w-full rounded-md relative overflow-hidden bg-gray-200 ${isImageLoaded ? "" : "animate-pulse"}`}>
         <Image
           src={src}

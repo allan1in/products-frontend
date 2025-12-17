@@ -3,3 +3,8 @@
 :root {
     --default-transition-duration: 0.3s;
 }
+
+ /* 隐藏原生清空按钮 */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
